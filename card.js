@@ -9,9 +9,7 @@ import {
   Dimensions,
 } from 'react-native';
 
-const {width , height} = Dimensions.get('window')
-
-const fbImage = 'https://graph.facebook.com/259389830744794/picture?height=500'
+const {width, height} = Dimensions.get('window')
 
 export default class Card extends React.Component {
   componentWillMount() {
@@ -74,11 +72,11 @@ const styles = StyleSheet.create({
    card: {
     position: 'absolute',
     overflow: 'hidden',
-    width: width -20,
+    width: width -40,
     height: height * 0.7,
     top: (height * 0.3) / 2,
     backgroundColor: 'white',
-    margin: 10,
+    margin: 20,
     borderWidth: 1,
     borderColor: 'lightgrey',
     borderRadius: 8,
